@@ -5,7 +5,7 @@ The tests are designed to verify the correctness of basic arithmetic operations
 (addition, subtraction, multiplication, division) implemented in the calculator.operations module,
 as well as the functionality of the Calculation class that encapsulates these operations.
 """
-
+# pylint: disable=unnecessary-dunder-call, invalid-name
 # Import statements:
 # Disable specific pylint warnings that are not relevant for this test file.
 # Import the Decimal class for precise decimal arithmetic, which is especially useful in financial calculations.
