@@ -2,13 +2,10 @@
 
 from decimal import Decimal
 import pytest
-
 from calculator.calculation import Calculation
 from calculator.calculations import Calculations
-
 from calculator.operations import add, subtract
-
-
+# pylint: disable=redefined-outer-name, unused-argument
 # pylint: disable=unnecessary-dunder-call, invalid-name
 @pytest.fixture
 def setup_calculations():
