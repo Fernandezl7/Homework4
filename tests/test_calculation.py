@@ -2,7 +2,7 @@
 from decimal import Decimal
 import pytest
 from calculator.calculation import Calculation
-from calculator.operations import add, subtract, multiply, divide
+from calculator.operations import add, divide
 
 # pylint: disable=unnecessary-dunder-call, invalid-name
 
@@ -21,4 +21,4 @@ def test_divide_by_zero():
     '''Test division by zero to ensure it raises a ValueError.'''
     calc = Calculation(Decimal('10'), Decimal('0'), divide)
     with pytest.raises(ValueError, match="Cannot divide by zero"):
-        calc.perform()  # Attempt to perform the calculation, which should trigger the ValueError.
+        calc.perform()  # Attempt to perform the calculation,which should trigger the ValueError.
